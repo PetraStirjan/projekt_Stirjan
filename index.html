@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Spotlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>MMA Spotlight</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Fight News</a>
+        <a href="#">History & Legends</a>
+        <a href="administration.html">Administration</a>
+    </nav>
+
+    <content>
+        <section>
+            <?php include_once 'get_articles.php'; ?>
+          
+        </section>
+    
+        <section>
+            <article>
+                <h2>Article 4</h2>
+                <p>This is the first article in the second section.</p>
+            </article>
+            <article>
+                <h2>Article 5</h2>
+                <p>This is the second article in the second section.</p>
+            </article>
+            <article>
+                <h2>Article 6</h2>
+                <p>This is the third article in the second section.</p>
+            </article>
+        </section>
+
+        
+    </content>
+    
+    <footer>
+        <p>&copy; 2024 MMA Spotlight Official Site</p>
+    </footer>
+</body>
+</html>

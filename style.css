@@ -1,0 +1,243 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+nav,
+footer {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+header {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: rgba(132, 132, 132, 0.834);
+    color: rgb(11, 8, 8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.username-display {
+    margin-left: auto;
+    padding-left: 10px;
+    color: white;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.username-display i {
+    margin-right: 8px;
+}
+
+.dropbtn {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: inherit;
+    background-color: #5b5a5ad4;
+}
+
+.dropdown {
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #080808e2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #5b5a5ad4;
+}
+
+nav a:hover {
+    background-color: #4a4949cb;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.article-content {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.215);
+}
+
+.article-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 10px 0;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #c7c1c1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+button#submit {
+    background-color: green;
+    color: white;
+
+}
+
+button#submit:hover {
+    background-color: rgb(11, 97, 11);
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+button[type="submit"] {
+    background-color: #508651;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    article {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
